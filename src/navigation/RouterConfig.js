@@ -10,25 +10,12 @@ import NotFound from '../pages/Error'
 const RouterConfig = (props) => {
   return (
     <>
-      <nav style={{ display: 'flex' }}>
-        <ul>
-          <Link to='/login'>Login</Link>
-          <li>
-            <Link to='/'>Home</Link>
-          </li>
-          <li>
-            <Link to='/record/123abc'>Record</Link>
-          </li>
-          <li>
-            <Link to='/result/123abc'>Result</Link>
-          </li>
-        </ul>
-      </nav>
-      <Routes>
-        <Route path="/" element={<Home />} />
+      <Routes
+      >
         <Route path="/login" element={<Login />} />
-        <Route path="/record/:id" element={<Record />} />
-        <Route path="/result/:id" element={<RecordResult />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/record/:userId" element={<Record />} />
+        <Route path="/result/:userId" element={<RecordResult />} />
         {/* List a generic 404-Not Found route here */}
         <Route path="*" element={<NotFound />} />
       </Routes>

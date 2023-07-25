@@ -1,8 +1,19 @@
+import { Box } from '@mui/material'
 import React from 'react'
 
 const RecordResult = () => {
   return (
-    <div>RecordResult</div>
+    <Box display={'flex'} flexDirection={'column'} justifyContent={'center'}>
+      <h1>
+        Record Result
+      </h1>
+      <Box>
+
+      </Box>
+      <Box>
+
+      </Box>
+    </Box>
   )
 }
 
